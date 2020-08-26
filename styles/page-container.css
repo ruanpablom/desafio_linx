@@ -1,0 +1,12 @@
+.page-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-container .sections-container{
+  display:flex;
+  flex-direction: column;
+  width: 57.5rem;
+}
