@@ -1,0 +1,20 @@
+footer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background: #888888;
+  clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0 100%);
+  justify-content: center;
+  margin-top: 4.5rem;
+  padding: 9.812rem 0 5.375rem 0;
+}
+
+footer small{
+  color: #FFFFFF;
+  font-size: 0.75rem;
+}
+
+footer small + small{
+  margin-top: 0.4rem;
+}
