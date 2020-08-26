@@ -1,0 +1,35 @@
+.share{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 8.75rem;
+  align-items: center;
+}
+
+.share span{
+  font-size: 0.875rem;
+  color: #888888;
+  margin-top: 3.375rem;
+}
+
+.share form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.share form .inputs{
+  display: inline-flex;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.share form button{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  color: #888888;
+  font-size: 1rem;
+  padding: 0.625rem 5.375rem;
+  margin-top: 3.125rem;
+}

@@ -10,3 +10,40 @@
   flex-direction: column;
   width: 57.5rem;
 }
+
+.title{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.title .divisor{
+  border-top: 1px solid #707070;
+  width: 100%;
+}
+
+.title strong{
+  font-size: 1.125rem;
+  color: #888888;
+  margin-top: -0.65rem;
+  background: #FFFFFF;
+  padding: 0 1rem 0 1rem;
+}
+
+form input{
+  height: 1.87rem;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  margin-top: 0.4rem;
+  width: 21.25rem;
+}
+
+form input, lablel {
+  display: block;
+}
+
+form label{
+  font-size: 0.75rem;
+  color: #888888;
+}
