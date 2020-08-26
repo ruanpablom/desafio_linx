@@ -1,0 +1,45 @@
+header{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background: #888888;
+  padding-top: 69px;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 65%);
+}
+
+header span{
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  letter-spacing: 0px;
+}
+
+header h1{
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  letter-spacing: 0px;
+  padding-top: 0.5rem;
+}
+
+header small{
+  color:#FFFFFF;
+  margin-top: 1.5rem;
+}
+
+header .buttons-container{
+  display:flex;
+  margin: 3.12rem 0 8rem 0;
+}
+
+header .buttons-container button{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 6px #00000029;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  color: #888888;
+  padding: 0.75rem 1.93rem 0.75rem 1.93rem;
+}
+
+header .buttons-container button + button{
+  margin-left: 2.5rem;
+}
