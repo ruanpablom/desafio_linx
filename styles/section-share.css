@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 8.75rem;
   align-items: center;
 }
 
@@ -10,18 +9,14 @@
   font-size: 0.875rem;
   color: #888888;
   margin-top: 3.375rem;
+  text-align: center;
 }
 
 .share form {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.share form .inputs{
-  display: inline-flex;
-  gap: 2.5rem;
-  margin-top: 2.5rem;
+  width: 100%;
 }
 
 .share form button{
@@ -31,5 +26,41 @@
   color: #888888;
   font-size: 1rem;
   padding: 0.625rem 5.375rem;
-  margin-top: 3.125rem;
+}
+
+@media (min-width: 300px) and (max-width: 950px){
+  .share{
+    margin-top: 8rem;
+  }
+  
+  .share form .inputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    width: 100%;
+  }
+
+  .share form .inputs .input-item + .input-item{
+    margin-top: 1.25rem;
+  }
+  
+  .share form button{
+    margin-top: 1.75rem;
+  }
+}
+
+@media (min-width: 950px){
+  .share{
+    margin-top: 8.75rem;
+  }
+  
+  .share form .inputs{
+    display: inline-flex;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+  }
+  
+  .share form button{
+    margin-top: 3.125rem;
+  }
 }

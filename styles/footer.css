@@ -1,20 +1,42 @@
 footer{
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
   background: #888888;
-  clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0 100%);
   justify-content: center;
-  margin-top: 4.5rem;
-  padding: 9.812rem 0 5.375rem 0;
 }
 
-footer small{
+footer:before {
+  content:"";
+  position:absolute;
+  top:-3.75rem;
+  height: 3.75rem;
+  left:0;
+  right:0;
+  background:linear-gradient(to bottom right, transparent 49%, #888888 50%);
+ }
+
+ footer small{
   color: #FFFFFF;
   font-size: 0.75rem;
 }
 
 footer small + small{
   margin-top: 0.4rem;
+}
+
+@media (min-width: 300px) and (max-width: 950px){
+  footer{
+    padding: 2.25rem 0 2rem;
+    margin-top: calc(3.75rem + 5.312rem);
+  }
+}
+
+@media (min-width: 950px){
+  footer{
+    padding: 4rem 0 5.375rem 0;
+    margin-top: calc(3.75rem + 4.437rem);
+  }
 }

@@ -1,34 +1,43 @@
+
 header{
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+header .header-bg{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   width: 100%;
-  align-items: center;
+  height: 100%;
   background: #888888;
-  padding-top: 69px;
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 65%);
+  transform-origin: top right;
 }
 
 header span{
+  position: relative;
   color: #FFFFFF;
   font-size: 1.25rem;
   letter-spacing: 0px;
 }
 
-header h1{
-  font-size: 2.5rem;
-  color: #FFFFFF;
-  letter-spacing: 0px;
-  padding-top: 0.5rem;
-}
-
 header small{
+  position: relative;
   color:#FFFFFF;
-  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  margin-top: 0.562rem;
 }
 
 header .buttons-container{
-  display:flex;
-  margin: 3.12rem 0 8rem 0;
+  align-self:center;
+  position: relative;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 header .buttons-container button{
@@ -37,9 +46,48 @@ header .buttons-container button{
   border: 1px solid #707070;
   border-radius: 4px;
   color: #888888;
-  padding: 0.75rem 1.93rem 0.75rem 1.93rem;
+  width: 10rem;
+  padding: 0.75rem 0;
 }
 
-header .buttons-container button + button{
-  margin-left: 2.5rem;
+header h1{
+  position: relative;
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  letter-spacing: 0px;
 }
+
+@media (min-width: 300px) and (max-width: 950px){
+  header{
+    align-items: flex-start;
+    padding: 4.312rem 1rem 0 1rem;
+    width: calc(100% -2rem);
+  }
+  
+  header .header-bg{
+    transform: skewY(18deg);
+  }
+  
+  header .buttons-container{
+    gap: 1.312rem;
+    margin: 3.5rem 0 4.312rem;
+  }
+}
+
+@media (min-width: 950px){
+  header{
+    align-items: center;
+    padding-top: 4.312rem;
+    width: 100%;
+  }
+  
+  header .header-bg{
+    transform: skewY(5deg);
+  }
+  
+  header .buttons-container{
+    gap: 2.5rem;
+    padding: 3.5rem 0 8.0rem;
+  }
+}
+

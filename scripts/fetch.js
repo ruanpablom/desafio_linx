@@ -17,17 +17,20 @@ const insertProducts = (page) => {
   loadData(page).then(response =>{
     response.json().then(data => {
       data.products.map(product => {
-        const p = document.createElement('p');
+        const p = document.createElement('div');
+        p.className = "product"
         p.innerHTML =
-          `<div class="product">
-            <img src="http:${product.image}" alt="">
+          `
+          <img src="http:${product.image}" alt="">
+          <div class="product-info">
             <span>${product.name}</span>
             <small class="description">${product.description}</small>
             <small>De: ${currencyFormatter(product.oldPrice)}</small>
             <strong>Por: ${currencyFormatter(product.price)}</strong>
             <small>ou ${product.installments.count}x de ${currencyFormatter(product.installments.value)}</small>
             <button type="button">Comprar</button>
-          </div>`
+          </div>
+          `
         ;
         productsContainer.appendChild(p);
       })

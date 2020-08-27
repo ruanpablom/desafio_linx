@@ -8,7 +8,6 @@
 .page-container .sections-container{
   display:flex;
   flex-direction: column;
-  width: 57.5rem;
 }
 
 .title{
@@ -36,7 +35,6 @@ form input{
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
   margin-top: 0.4rem;
-  width: 21.25rem;
 }
 
 form input, lablel {
@@ -46,4 +44,25 @@ form input, lablel {
 form label{
   font-size: 0.75rem;
   color: #888888;
+}
+
+@media (min-width: 300px) and (max-width: 950px){
+  .page-container .sections-container{
+    width: calc(100% - 2rem);
+    padding: 0 1rem;
+  }
+  
+  form input{
+    width: 100%;
+  } 
+}
+
+@media (min-width: 950px){
+  .page-container .sections-container{
+    width: 57.5rem;
+  }
+  
+  form input{
+    width: 21.25rem;
+  }
 }
