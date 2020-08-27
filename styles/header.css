@@ -40,7 +40,7 @@ header .buttons-container{
   justify-content: center;
 }
 
-header .buttons-container button{
+header .buttons-container a{
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 1px 6px #00000029;
   border: 1px solid #707070;
@@ -48,6 +48,8 @@ header .buttons-container button{
   color: #888888;
   width: 10rem;
   padding: 0.75rem 0;
+  text-decoration: none;
+  text-align: center;
 }
 
 header h1{

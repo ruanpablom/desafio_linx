@@ -35,6 +35,7 @@ form input{
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
   margin-top: 0.4rem;
+  padding: 0 1rem;
 }
 
 form input, lablel {
@@ -46,6 +47,12 @@ form label{
   color: #888888;
 }
 
+span.error{
+  font-size: 0.75rem !important;
+  color: red !important;
+  margin-top: 0.4rem !important;
+}
+
 @media (min-width: 300px) and (max-width: 950px){
   .page-container .sections-container{
     width: calc(100% - 2rem);
@@ -53,7 +60,7 @@ form label{
   }
   
   form input{
-    width: 100%;
+    width: calc(100% - 2rem);
   } 
 }
 
@@ -63,6 +70,6 @@ form label{
   }
   
   form input{
-    width: 21.25rem;
+    width: calc(21.25rem - 2rem);
   }
 }
