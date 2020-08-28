@@ -1,0 +1,30 @@
+.email-text h3{
+  font-weight: 200;
+  color: #888888;
+  font-size: 1.25rem;
+}
+
+.email-text p{
+  color: #888888;
+  font-size: 0.75rem;
+  height: 3.75rem;
+}
+
+.page-container{
+  min-height: 100vh;
+}
+
+.products{
+  margin-top: 1rem;
+}
+
+.products #products-container{
+  padding: 0 4rem;
+  width: calc(100% - 8rem);
+  margin-top: 0;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+}

@@ -9,12 +9,12 @@ header{
 header .header-bg{
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 200px;
   right: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #888888;
+  background: #707070;
   transform-origin: top right;
 }
 
@@ -63,7 +63,8 @@ header h1{
   header{
     align-items: flex-start;
     padding: 4.312rem 1rem 0 1rem;
-    width: calc(100% -2rem);
+    width: calc(100% - 2rem);
+    padding-bottom: 4.312rem;
   }
   
   header .header-bg{
@@ -72,24 +73,39 @@ header h1{
   
   header .buttons-container{
     gap: 1.312rem;
-    margin: 3.5rem 0 4.312rem;
+    margin-top: 3.5rem;
+  }
+}
+
+@media (min-width: 600px){
+  header{
+    align-items: center;
+    padding: 3.125rem 0;
+    width: 100%;
+  }
+  header small{
+    max-width: 360px;
+    text-align: center;
+  }
+  header .header-bg{
+    transform: skewY(4deg);
   }
 }
 
 @media (min-width: 950px){
   header{
     align-items: center;
-    padding-top: 4.312rem;
     width: 100%;
+    padding: 4.312rem 0 8.0rem;
   }
   
   header .header-bg{
-    transform: skewY(5deg);
+    transform: skewY(4deg);
   }
   
   header .buttons-container{
     gap: 2.5rem;
-    padding: 3.5rem 0 8.0rem;
+    margin-top: 3.5rem;
   }
 }
 

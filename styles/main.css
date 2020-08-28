@@ -1,7 +1,6 @@
 .page-container{
   display:flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -51,6 +50,12 @@ span.error{
   font-size: 0.75rem !important;
   color: red !important;
   margin-top: 0.4rem !important;
+}
+
+.button{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 4px;
 }
 
 @media (min-width: 300px) and (max-width: 950px){
