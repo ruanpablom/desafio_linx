@@ -37,6 +37,12 @@
   }
 }
 
+@media (min-width: 500px){
+  .share form{
+    width: 20rem;
+  }
+}
+
 @media (min-width: 950px){
   .share{
     margin-top: 8.75rem;

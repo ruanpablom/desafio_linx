@@ -60,6 +60,16 @@
   }
 }
 
+@media (min-width: 500px){
+  .alg{
+    align-items: center;
+  }
+  
+  .alg #alg-form{
+    width: 20rem;
+  }
+}
+
 @media (min-width: 950px){
   .alg{
     flex-direction: row;
