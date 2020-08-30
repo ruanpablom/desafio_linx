@@ -1,66 +1,9 @@
-
-header{
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  overflow: hidden;
-}
-
-header .header-bg{
-  position: absolute;
-  top: 0;
-  bottom: 200px;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #707070;
-  transform-origin: top right;
-}
-
-header span{
-  position: relative;
-  color: #FFFFFF;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-}
-
-header small{
-  position: relative;
-  color:#FFFFFF;
-  font-size: 0.875rem;
-  margin-top: 0.562rem;
-}
-
-header .buttons-container{
-  align-self:center;
-  position: relative;
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-header .buttons-container a{
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  box-shadow: 0px 1px 6px #00000029;
-  border: 1px solid #707070;
-  border-radius: 4px;
-  color: #888888;
-  width: 10rem;
-  padding: 0.75rem 0;
-  text-decoration: none;
-  text-align: center;
-}
-
-header h1{
-  position: relative;
-  font-size: 2.5rem;
-  color: #FFFFFF;
-  letter-spacing: 0px;
-}
-
-@media (min-width: 300px) and (max-width: 950px){
+@media (min-width: 300px){
   header{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
     align-items: flex-start;
     padding: 4.312rem 1rem 0 1rem;
     width: calc(100% - 2rem);
@@ -68,12 +11,52 @@ header h1{
   }
   
   header .header-bg{
+    position: absolute;
+    top: 0;
+    bottom: 12.5rem;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #707070;
+    transform-origin: top right;
     transform: skewY(18deg);
+  }
+
+  header span{
+    position: relative;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+  }
+
+  header small{
+    position: relative;
+    color:#FFFFFF;
+    margin-top: 0.562rem;
+  }
+
+  header h1{
+    position: relative;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    letter-spacing: 0px;
   }
   
   header .buttons-container{
+    display: inline-flex;
+    align-self:center;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1.312rem;
     margin-top: 3.5rem;
+  }
+
+  header .buttons-container a{
+    width: 10rem;
+    padding: 0.75rem 0;
+    text-decoration: none;
+    text-align: center;
   }
 }
 
@@ -103,6 +86,11 @@ header h1{
     transform: skewY(4deg);
   }
   
+  header small{
+    margin-top: 1.5rem;
+    max-width: none;
+  }
+
   header .buttons-container{
     gap: 2.5rem;
     margin-top: 3.5rem;

@@ -23,12 +23,12 @@ const insertProducts = (page) => {
           `
           <img src="http:${product.image}" alt="">
           <div class="product-info">
-            <span>${product.name}</span>
-            <small class="description">${product.description}</small>
-            <small>De: ${currencyFormatter(product.oldPrice)}</small>
-            <strong>Por: ${currencyFormatter(product.price)}</strong>
-            <small>ou ${product.installments.count}x de ${currencyFormatter(product.installments.value)}</small>
-            <button type="button">Comprar</button>
+            <span class="text-small">${product.name}</span>
+            <small class="description text-tiny">${product.description}</small>
+            <small class="text-tiny">De: ${currencyFormatter(product.oldPrice)}</small>
+            <strong class="text-medium" >Por: ${currencyFormatter(product.price)}</strong>
+            <small class="text-tiny">ou ${product.installments.count}x de ${currencyFormatter(product.installments.value)}</small>
+            <button class="button text-medium" type="button">Comprar</button>
           </div>
           `
         ;
